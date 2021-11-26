@@ -76,8 +76,8 @@ wrapper(i);
 // solution 2
 
 
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < 4; i++) {
     (function(i){ return  setTimeout(function () {
-      console.log("count ", i);
-    }, 3000);})(i);
+      console.log( i);
+    }, 0);})(i);
   }
