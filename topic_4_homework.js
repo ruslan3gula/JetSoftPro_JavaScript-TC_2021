@@ -66,7 +66,18 @@ I found nothing to fix .Ruslan Gula
 // 5.We want this code to log out the numbers 0, 1, 2, 3 in that order,
 // but it doesn’t do what we expect - fix that(find two solutions)
 
+//solution 1
 const wrapper = (i) => setTimeout(() => console.log(i), 0);
-// for (var i = 0; i < 4; i++) {
+for (var i = 0; i < 4; i++) {
 wrapper(i);
-// }
+ }
+
+
+// solution 2
+
+
+for (var i = 0; i < 5; i++) {
+    (function(i){ return  setTimeout(function () {
+      console.log("count ", i);
+    }, 3000);})(i);
+  }
